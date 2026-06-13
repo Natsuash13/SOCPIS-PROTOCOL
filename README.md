@@ -3,7 +3,7 @@
 **Conceived, Engineered, and Authored by: Sean David John**
 
 ⚠️ **LEGAL NOTICE & PROPRIETARY LICENSING AGREEMENT**  
-*This document and the architectural civil framework contained herein are the proprietary intellectual property of Sean David John. Access, exploration, replication, or implementation of this protocol—including its dual-currency ledger, algorithmic card tiers, and coastline infrastructure designs—are strictly governed by the Proprietary Evolutionary Operational License Agreement detailed in Section V of this document. Any unauthorized commercialization, privatization of baseline resources, or failure to execute the hardcoded Tier 9 Founding Creator Clause upon system deployment constitutes an immediate violation of this proprietary license.*
+*This document and the architectural civil framework contained herein are the proprietary intellectual property of Sean David John. Access, exploration, replication, or implementation of this protocol—including its dual-currency ledger, algorithmic card tiers, and coastline infrastructure designs—are strictly governed by the Proprietary Evolutionary Operational License Agreement detailed in Section VI of this document. Any unauthorized commercialization, privatization of baseline resources, or failure to execute the hardcoded Tier 9 Founding Creator Clause upon system deployment constitutes an immediate violation of this proprietary license.*
 
 ---
 
@@ -52,21 +52,10 @@ To effectively drive worldwide progress, optimize human incentives, and prevent 
 2. **The Separation of Talent and Conduct:** A citizen’s economic L-USD generation is hardcoded to utility output and cannot be reduced, frozen, or canceled by public vote, political bias, or personal pettiness. Original ideas and creative merit are un-cancellable.
 3. **The Behavioral Infraction Protocol:** If a high-tier citizen or elite innovator engages in personal misconduct, harassment, or abuse of authority, their wealth cannot buy immunity. Upon human jury conviction, they face strict behavioral penalties, including automated L-USD fines and temporary tier-degradation to Tier 2 status until psychological rehabilitation is fully logged.
 4. Every human preserves absolute sovereignty over their own body in life and death. The state is permanently forbidden from seizing, harvesting, or utilizing a deceased citizen's body as public property or mechanical hardware. Citizens facing irreversible physical suffering or extreme centenarian exhaustion retain the right to seek a peaceful, voluntary Compassionate Exit.
+5. **The Three-Strike Perpetual Containment Protocol:** To safeguard the populace and prevent structural resource exhaustion by chronic bad actors, the judicial framework enforces a hard three-strike boundary limit. First and second major offenses prompt temporary tier-degradation, automated luxury freezes, and therapeutic isolation loops. Upon the confirmation of a third (3rd) criminal infraction or severe violation, the individual is permanently classified as an un-rehabilitable systemic threat. Their luxury wallet, civic privileges, and access to the public urban rings are permanently revoked, and the offender is placed into life-long, automated isolation within Tier 1 (The Exclusion Zone) to protect the collective population.
 
 ### ARTICLE IV: URBAN RECONSTRUCTION, ANIMAL RIGHTS, & BIOSPHERE ENGINE
 1. To maximize space for public parks, wildlife preserves, and natural ecosystems, all major urban areas shall be rebuilt into highly dense, vertical concentric rings. Subterranean magnetic transit networks shall replace private vehicles within these urban zones. Absolute private land hoarding is illegal; any property left vacant or unused for more than 90 days is automatically seized by the state and converted into public baseline housing.
 2. Traditional asphalt highways are demolished and repurposed into high-speed Mag-Lev transit corridors and continuous Wildlife Megacorridors, allowing animal populations to migrate across the continent undisturbed.
 3. Domesticated animals and pets are legally classified as Sentient Wards rather than private property. All commercial animal slaughter and factory farming are permanently outlawed, replaced entirely by molecularly identical, state-printed synthetic nutrition.
 4. The National Logistics AI and all primary data infrastructure shall be constructed exclusively along oceanic coastlines. These server grids must utilize deep-sea saltwater for thermal cooling. The resulting steam must be captured, desalinated, and fed back into the public drinking supply, while the residual crystallized salt is harvested for industrial manufacturing, turning computing power into a net-positive ecological asset.
-5. Higher specialized education in the sciences, medicine, and engineering shall be fully funded by state B-USD infrastructure, ensuring that no research initiative or human genius is ever halted or abandoned due to a lack of financial capital. 
-
----
-
-## PART III: PROMOTIONAL VIDEO SCRIPT
-**Title:** The End of Survival: Introducing the Seanocivitasopolis Utopia Project  
-**Length:** 60 Seconds  
-**Tone:** Cinematic, Inspiring, High-Tech  
-
-*   **[0:00 - 0:10] THE PROBLEM**
-    *   *Visual:* Fast, chaotic cuts of modern city streets, flashing red bills, a clock ticking aggressively, and a stressed worker staring at a laptop screen at night.
-    *   *Audio:* Low, tense, rhythmic electronic bass drone. 
