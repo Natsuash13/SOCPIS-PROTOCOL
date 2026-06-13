@@ -1,4 +1,4 @@
-# THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOTP)
+# THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOCPIS)
 ## The Official Manifesto for the SOCPIS Protocol
 **Authored by:** Sean David John  
 **Version:** 2.0 (Updated 2026)  
