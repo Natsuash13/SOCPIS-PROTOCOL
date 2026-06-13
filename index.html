@@ -3,77 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOTP Protocol Interactive Dashboard & Core Guidance Engine</title>
-    <!-- Automatic bridge linking your parallel visual style sheet -->
+    <title>SOCPIS Protocol Sandbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>SOCPIS PROTOCOL</h1>
+        <p class="subtitle">Seanocivitasopolis Utopia Project (SOTP)</p>
+    </header>
 
-<div class="container">
-    <h1>SOTP INTERACTIVE DEMO PORTAL</h1>
-    <h3>Founding Architect: Sean David John</h3>
-    
-    <div class="video-section">
-        <div class="video-title">Official SOTP Cinematic Trailer</div>
-        <video src="PASTE_YOUR_ELEVENLABS_VIDEO_URL_HERE" controls poster="https://unsplash.com">
-            Your browser does not support the video player tag.
-        </video>
-    </div>
+    <main class="container">
+        <!-- Directives Section -->
+        <section class="card display-section">
+            <h2>🏛️ Foundational Civic Directives</h2>
+            <div class="directives-grid">
+                <div class="directive-box">
+                    <h3>1. Human Inviolability</h3>
+                    <p>Every human life has unquantifiable value. Survival is an unconditional birthright.</p>
+                </div>
+                <div class="directive-box">
+                    <h3>2. Post-Scarcity</h3>
+                    <p>Free premium healthcare, housing, nutrition, and education for all citizens.</p>
+                </div>
+                <div class="directive-box">
+                    <h3>3. Machine Subservience</h3>
+                    <p>AI has zero legislative power and is strictly subservient to human empathy.</p>
+                </div>
+                <div class="directive-box">
+                    <h3>4. Fluid Meritocracy</h3>
+                    <p>Decentralized liquid democracy replacing career politicians with ethical merit scaling.</p>
+                </div>
+                <div class="directive-box">
+                    <h3>5. Legacy Calibration</h3>
+                    <p>Dynamic equity parameters to balance historical injustices with starter allotments.</p>
+                </div>
+                <div class="directive-box">
+                    <h3>6. Biosphere Equilibrium</h3>
+                    <p>Zero-tolerance for animal cruelty, materials overuse, or environmental destruction.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="layout-grid">
-        <!-- LEFT PANEL: SYSTEM LEDGER SIMULATOR -->
-        <div class="panel">
-            <div class="panel-header">🌐 Ledger Profile Matrix</div>
-            <div class="input-group">
-                <label for="tier">Select Active Profile to Inspect:</label>
-                <select id="tier" onchange="updateSimulation()">
-                    <option value="1">Tiers 1 & 2 (Incarcerated / Correction Status)</option>
-                    <option value="3">Tier 3 (The Baseline Floor) - Law-Abiding Citizen</option>
-                    <option value="4">Tier 4 (The 7) - Foundational Labor & Students</option>
-                    <option value="7">Tier 7 (The 10) - Emergency Crisis Guardian</option>
-                    <option value="9">Tier 9 (The Queen) - Founding Architect (Sean David John)</option>
+        <!-- Sandbox Simulator -->
+        <section class="card simulator-section">
+            <h2>💳 Economy & Matrix Calculator</h2>
+            <p>Select a Social Tier to simulate the economic distribution rules under the SOCPIS framework:</p>
+            
+            <div class="control-group">
+                <label for="tierSelect">Select Social Matrix Tier:</label>
+                <select id="tierSelect">
+                    <option value="2">Tier 2: Correction Floor (Rehabilitation)</option>
+                    <option value="3" selected>Tier 3: Baseline Floor (Universal Birthright)</option>
+                    <option value="4">Tier 4: LCI Entry Allotment</option>
+                    <option value="7">Tier 7: Active Contributor (Creator/Educator)</option>
+                    <option value="11">Tier 11: Human Executive Branch</option>
+                    <option value="12">Tier 12: World Council Member</option>
                 </select>
             </div>
 
-            <div class="ledger-box">
-                <div class="wallet">
-                    <div>Baseline Balance (B-USD)</div>
-                    <div class="wallet-val" id="busd-display">1,500</div>
+            <div class="results-display">
+                <div class="stat-box">
+                    <h4>B-USD Account (Survival)</h4>
+                    <p id="busdVal">$5,000 / mo (Universal Base)</p>
                 </div>
-                <div class="wallet">
-                    <div>Luxury Balance (L-USD)</div>
-                    <div class="wallet-val" id="lusd-display">0</div>
+                <div class="stat-box">
+                    <h4>L-USD Multiplier (Luxury)</h4>
+                    <p id="lusdVal">1.0x (Standard Merit)</p>
+                </div>
+                <div class="stat-box">
+                    <h4>System Permissions</h4>
+                    <p id="permVal">Full Sovereign Baseline Rights</p>
                 </div>
             </div>
+        </section>
 
-            <div class="input-group">
-                <label for="siphon-amt">Siphon Baseline to Luxury Wallet (Max 10% Limit):</label>
-                <input type="number" id="siphon-amt" max="500" min="0" value="0">
-                <button class="btn" onclick="executeSiphon()">Execute Siphon Matrix</button>
+        <!-- Overuse Simulation Terminal -->
+        <section class="card terminal-section">
+            <h2>🛒 BST Card Interaction Terminal (Overuse Test)</h2>
+            <p>Simulate purchasing items to test how the system manages resource allocation limits:</p>
+            <div class="transaction-buttons">
+                <button class="btn btn-base" onclick="simulateBSTTransaction('baseline', false)">Standard Baseline Purchase (1x Weekly Rations)</button>
+                <button class="btn btn-alert" onclick="simulateBSTTransaction('baseline', true)">Excessive Baseline Purchase (5x Bulk Weekly Rations)</button>
+                <button class="btn btn-luxury" onclick="simulateBSTTransaction('luxury', 150)">Premium Luxury Purchase (Artisanal Clock - L$150)</button>
+            </div>
+        </section>
+
+        <!-- Adaptive Allocation Portal (AAP) -->
+        <section class="card aap-section">
+            <h2>🔄 Adaptive Allocation Portal (AAP)</h2>
+            <p>If your physiological needs have increased (e.g. higher physical exercise output) or your local community is facing a resource shortage, use this portal to instantly calibrate your allocation threshold:</p>
+            
+            <div class="control-group">
+                <label for="aapReason">Select Adjustment Reason:</label>
+                <select id="aapReason">
+                    <option value="exercise">Increased Physiological Demand (High Athletic Output / Exercise)</option>
+                    <option value="medical">Medical / Nutritional Metabolic Calibration Request</option>
+                    <option value="shortage">Community Baseline Deficit / Quality Complaint</option>
+                </select>
             </div>
 
-            <div class="output-box" id="sim-output">
-                Select a citizen tier profile above to dynamically inspect live system clearances.
-            </div>
-        </div>
+            <button class="btn btn-luxury" onclick="submitAAPRequest()">Sync BST Card & Recalibrate Threshold</button>
+        </section>
+    </main>
 
-        <!-- RIGHT PANEL: SOTP GUIDANCE AI TERMINAL -->
-        <div class="panel">
-            <div class="panel-header">🤖 Core Guidance Intelligence Terminal</div>
-            <div class="chat-messages" id="chat-box">
-                <div class="msg ai">Greetings. I am the SOTP Guidance Intelligence Core. Ask me any question regarding the logistics, economic frameworks, or judicial parameters established by Founding Architect Sean David John.</div>
-            </div>
-            <div class="chat-input-area">
-                <input type="text" id="user-input" placeholder="Ask about currency, tiers, loophole patches..." onkeypress="handleKeyPress(event)">
-                <button class="btn chat-btn" onclick="sendQuestion()">Query</button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="author-tag">PROPRIETARY EVOLUTIONARY OPERATIONAL SYSTEM INTEGRITY © SEAN DAVID JOHN</div>
-</div>
+    <footer>
+        <p>&copy; 2026 Sean David John. Protected under the SOCPIS Custom 3-Clause Non-Commercial License.</p>
+    </footer>
 
-<!-- Automatic nerve path wiring your parallel programming logic sheet -->
-<script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
