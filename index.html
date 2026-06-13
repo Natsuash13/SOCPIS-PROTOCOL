@@ -3,33 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOTP Protocol Interactive Dashboard</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0b0f19; color: #e2e8f0; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
-        .container { max-width: 800px; width: 100%; background: #111827; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); border: 1px solid #1f2937; }
-        h1 { color: #3b82f6; text-align: center; margin-bottom: 5px; letter-spacing: 1px; }
-        h3 { text-align: center; color: #9ca3af; margin-top: 0; font-weight: 400; margin-bottom: 25px; }
-        .video-section { background: #1f2937; padding: 15px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #374151; }
-        .video-title { font-size: 14px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; text-align: center; font-weight: bold; }
-        video { width: 100%; border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
-        .ledger-box { display: flex; justify-content: space-around; background: #1f2937; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #3b82f6; }
-        .wallet { text-align: center; }
-        .wallet-val { font-size: 24px; font-weight: bold; color: #10b981; margin-top: 5px; }
-        .tier-select { margin: 20px 0; display: flex; flex-direction: column; }
-        select, input, button { padding: 12px; border-radius: 6px; border: 1px solid #374151; background: #1f2937; color: white; font-size: 16px; margin-top: 5px; }
-        button { background: #3b82f6; cursor: pointer; font-weight: bold; transition: background 0.2s; margin-top: 15px; border: none; }
-        button:hover { background: #2563eb; }
-        .output-box { background: #0b0f19; padding: 20px; border-radius: 6px; margin-top: 20px; font-size: 15px; line-height: 1.6; border: 1px solid #1f2937; }
-        .author-tag { text-align: center; font-size: 11px; color: #4b5563; margin-top: 30px; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
-    </style>
+    <title>SOTP Protocol Interactive Dashboard & Core Guidance Engine</title>
+    <!-- Automatic bridge linking your parallel visual style sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>SOTP SYSTEM SIMULATOR</h1>
+    <h1>SOTP INTERACTIVE DEMO PORTAL</h1>
     <h3>Founding Architect: Sean David John</h3>
     
-    <!-- VIDEO BLOCK: PASTE YOUR ELEVENLABS URL IN THE SRC ATTRIBUTE BELOW -->
     <div class="video-section">
         <div class="video-title">Official SOTP Cinematic Trailer</div>
         <video src="PASTE_YOUR_ELEVENLABS_VIDEO_URL_HERE" controls poster="https://unsplash.com">
@@ -37,92 +20,60 @@
         </video>
     </div>
 
-    <div class="tier-select">
-        <label for="tier">Select Active Citizen Tier Role to Inspect:</label>
-        <select id="tier" onchange="updateSimulation()">
-            <option value="3">Tier 3 (The Baseline Floor) - Non-worker / Student</option>
-            <option value="4">Tier 4 (The 7) - Foundational Labor (e.g., Retail, Fast Food)</option>
-            <option value="5">Tier 5 (The 8) - Asset Steward / Small Business Manager</option>
-            <option value="6">Tier 6 (The 9) - Cultural Artisan (e.g., Artist, Musician)</option>
-            <option value="7">Tier 7 (The 10) - Emergency Response (e.g., Trauma Surgeon)</option>
-            <option value="8">Tier 8 (The Jack) - Civil Infrastructure / Clean Energy Engineer</option>
-            <option value="9">Tier 9 (The Queen) - Founding Architect (Sean David John)</option>
-            <option value="10">Tier 10 (The King) - Corporate Executive / CEO</option>
-        </select>
-    </div>
+    <div class="layout-grid">
+        <!-- LEFT PANEL: SYSTEM LEDGER SIMULATOR -->
+        <div class="panel">
+            <div class="panel-header">🌐 Ledger Profile Matrix</div>
+            <div class="input-group">
+                <label for="tier">Select Active Profile to Inspect:</label>
+                <select id="tier" onchange="updateSimulation()">
+                    <option value="1">Tiers 1 & 2 (Incarcerated / Correction Status)</option>
+                    <option value="3">Tier 3 (The Baseline Floor) - Law-Abiding Citizen</option>
+                    <option value="4">Tier 4 (The 7) - Foundational Labor & Students</option>
+                    <option value="7">Tier 7 (The 10) - Emergency Crisis Guardian</option>
+                    <option value="9">Tier 9 (The Queen) - Founding Architect (Sean David John)</option>
+                </select>
+            </div>
 
-    <div class="ledger-box">
-        <div class="wallet">
-            <div>Baseline Wallet Balance (B-USD)</div>
-            <div class="wallet-val" id="busd-display">1,500</div>
+            <div class="ledger-box">
+                <div class="wallet">
+                    <div>Baseline Balance (B-USD)</div>
+                    <div class="wallet-val" id="busd-display">1,500</div>
+                </div>
+                <div class="wallet">
+                    <div>Luxury Balance (L-USD)</div>
+                    <div class="wallet-val" id="lusd-display">0</div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="siphon-amt">Siphon Baseline to Luxury Wallet (Max 10% Limit):</label>
+                <input type="number" id="siphon-amt" max="500" min="0" value="0">
+                <button class="btn" onclick="executeSiphon()">Execute Siphon Matrix</button>
+            </div>
+
+            <div class="output-box" id="sim-output">
+                Select a citizen tier profile above to dynamically inspect live system clearances.
+            </div>
         </div>
-        <div class="wallet">
-            <div>Luxury Wallet Balance (L-USD)</div>
-            <div class="wallet-val" id="lusd-display">0</div>
+
+        <!-- RIGHT PANEL: SOTP GUIDANCE AI TERMINAL -->
+        <div class="panel">
+            <div class="panel-header">🤖 Core Guidance Intelligence Terminal</div>
+            <div class="chat-messages" id="chat-box">
+                <div class="msg ai">Greetings. I am the SOTP Guidance Intelligence Core. Ask me any question regarding the logistics, economic frameworks, or judicial parameters established by Founding Architect Sean David John.</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about currency, tiers, loophole patches..." onkeypress="handleKeyPress(event)">
+                <button class="btn chat-btn" onclick="sendQuestion()">Query</button>
+            </div>
         </div>
-    </div>
-
-    <div class="tier-select">
-        <label for="siphon-amt">Siphon Baseline to Luxury (Strictly Capped at 10% Maximum):</label>
-        <input type="number" id="siphon-amt" max="500" min="0" value="0">
-        <button onclick="executeSiphon()">Execute Regulated Siphon Transaction</button>
-    </div>
-
-    <div class="output-box" id="sim-output">
-        Select a citizen tier above to dynamically inspect the live resource distribution profiles.
     </div>
     
     <div class="author-tag">PROPRIETARY EVOLUTIONARY OPERATIONAL SYSTEM INTEGRITY © SEAN DAVID JOHN</div>
 </div>
 
-<script>
-    const tierData = {
-        3: { busd: 1500, lusd: 0, housing: "Standard Baseline Studio space", meals: "3 Meals / 2 Snacks (Standard Utility Nutrition Allocation)", access: "Free unconditional preventative health networks & public ad-supported streaming." },
-        4: { busd: 1750, lusd: 500, housing: "Modern 1-Bedroom urban structural pod", meals: "3 Meals / 2 Snacks (Expanded fresh localized ingredients)", access: "Unlocked Jack-level Face Card luxury consumer transaction profile." },
-        5: { busd: 2000, lusd: 1200, housing: "Expanded multi-room asset lease layout", meals: "Enhanced fresh nutrition baseline matrix", access: "Authority to hold long-term property leases and run zero-waste small businesses." },
-        6: { busd: 2200, lusd: 3000, housing: "Spacious independent studio flat", meals: "Elite localized clean culinary options", access: "Priority access to public production gear, cultural venues, and creative labs." },
-        7: { busd: 2500, lusd: 8000, housing: "Premium neighborhood housing priority allotment", meals: "Maximum baseline bio-available wellness nutrition blocks", access: "Priority high-speed mag-lev transit clearance and emergency service network overrides." },
-        8: { busd: 2800, lusd: 10000, housing: "Large family-sized specialized living unit", meals: "Maximum state utility nutrition clearing", access: "Extended infrastructure vacation blocks and grid engineering system parameters." },
-        9: { busd: 5000, lusd: 50000, housing: "Sovereign Structural Design Lab & Global Penthouse", meals: "Unrestricted baseline culinary clearing privileges", access: "Lifelong King-level Founding Creator luxury stipend & absolute system innovation status." },
-        10: { busd: 3000, lusd: 25000, housing: "Large-scale factory/development block infrastructure", meals: "Elite enterprise hospitality allowance parameters", access: "Direct access to heavy manufacturing baselines and corporate innovation sandbox zones." }
-    };
-
-    function updateSimulation() {
-        const tier = document.getElementById('tier').value;
-        const data = tierData[tier];
-        document.getElementById('busd-display').innerText = data.busd.toLocaleString();
-        document.getElementById('lusd-display').innerText = data.lusd.toLocaleString();
-        
-        document.getElementById('sim-output').innerHTML = `
-            <strong>CURRENT STRUCTURAL LIFESTYLE METRICS (TIER ${tier}):</strong><br><br>
-            🏡 <strong>Shelter Occupancy:</strong> Fully assigned ${data.housing} (Cost: 0 B-USD, 0 L-USD)<br>
-            🍎 <strong>Nutrition Profile:</strong> ${data.meals}<br>
-            ⚙️ <strong>System Clearance Array:</strong> ${data.access}
-        `;
-    }
-
-    function executeSiphon() {
-        const amt = parseFloat(document.getElementById('siphon-amt').value);
-        const tier = document.getElementById('tier').value;
-        const currentBusd = tierData[tier].busd;
-        const maxSiphon = currentBusd * 0.10;
-        
-        if (amt > maxSiphon) {
-            alert(`⚠️ SYSTEM EXCEPTION: Requested siphon transaction violates chip hardcoded safety thresholds. The maximum allowed conversion for your current tier profile is ${maxSiphon} B-USD.`);
-            return;
-        }
-        
-        if (amt <= 0 || isNaN(amt)) {
-            alert(`⚠️ SYSTEM EXCEPTION: Enter a valid positive baseline amount to convert.`);
-            return;
-        }
-        
-        const luxuryGained = amt / 10;
-        alert(`✅ CONVERSION TRANSACTION EXECUTED:\nSiphoned: ${amt} B-USD\nGenerated: ${luxuryGained} L-USD\n\n10:1 Siphon regulatory penalty applied. Absolute safety rail buffers remain completely locked.`);
-    }
-
-    // Run once at start to draw default Tier 3 values
-    updateSimulation();
-</script>
+<!-- Automatic nerve path wiring your parallel programming logic sheet -->
+<script src="script.js"></script>
 </body>
 </html>
