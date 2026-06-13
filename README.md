@@ -30,11 +30,13 @@ The Seanocivitasopolis Utopia Project (SOTP) is a next-generation civil matrix t
 3. L-USD is issued exclusively to reward labor, technical civic contribution, scientific innovation, and artistic creation. L-USD scales infinitely through a merit-based Face-Card system and governs access to all luxury commodities, premium real estate tiers, and private travel.
 4. Citizens retain the right to siphon up to 10% of their monthly B-USD balance into L-USD to reward personal frugality. Under no circumstance may B-USD be traded peer-to-peer for luxuries, nor may L-USD be converted back into the baseline market, completely preventing inflation and systemic exploitation.
 
-### ARTICLE II: THE 12-TIER REGULATORY MATRIX
-To effectively drive worldwide progress, optimize human incentives, and prevent systemic resource collapse, society is organized into twelve distinct functional tiers:
-*   **Tier 12 (The Joker):** The Global Logistics Core AI Matrix. Holds absolute negative veto power over unsustainable legislation; possesses zero lawmaking authority.
-*   **Tier 11 (The Ace):** Elite Global Council. International diplomats and planetary resource arbitrators handling borderless logistics.
-*   **Tier 10 (The King):** Federal Executive. The President, Supreme Court, and elected human lawmakers directing federal civic infrastructure.
+### ARTICLE II: THE 13-TIER REGULATORY MATRIX
+To effectively drive worldwide progress, optimize human incentives, and prevent systemic resource collapse, society is organized into thirteen distinct functional tiers where human wealth is dictated strictly by active contribution and merit, not by political titles:
+
+*   **Tier 13 (The Joker):** The Global Logistics Core AI Matrix. Holds absolute negative veto power over unsustainable legislation; possesses zero lawmaking authority over humanity.
+*   **Tier 12 (The Deuce):** The World Unified Council. Global logistics commanders, planetary ecology directors, and inter-continental resource arbitrators. Coordinates borderless resource distribution between unified nations.
+*   **Tier 11 (The Ace):** National Human Executive. The Presidents, Supreme Courts, and elected national lawmakers directing individual federal civic infrastructure.
+*   **Tier 10 (The King):** Corporate Executives, CEOs, & Industrial Leaders. Managing large-scale luxury infrastructure, private production, and corporate innovation sandboxes.
 *   **Tier 9 (The Queen):** Founding Architects (The Sean David John Tier). Master innovators, philosophers, and tech pioneers. Grants permanent lifelong luxury stipends and elite clearance.
 *   **Tier 8 (The Jack):** Civil Infrastructure. Mass transit operators, grid technicians, and clean energy engineers.
 *   **Tier 7 (The 10):** Emergency Response. Trauma doctors, crisis nurses, and community safety mediators.
@@ -42,13 +44,14 @@ To effectively drive worldwide progress, optimize human incentives, and prevent 
 *   **Tier 5 (The 8):** Asset Stewards. Small business operators, organic farmers, and micro-factory managers holding long-term property leases.
 *   **Tier 4 (The 7):** Foundational Labor. Basic retail operators, fast food workers, and community cleaners.
 *   **Tier 3 (The 6):** The Baseline Floor. Non-workers, students, and citizens focusing on personal creative growth. The unconditional global human survival right.
-*   **Tier 2 (The 5):** The Emergency Flex. Citizens undergoing behavioral rehabilitation or temporary financial fraud correction. Drops to basic micro-pod housing and survival rations.
+*   **Tier 2 (The Two Card):** The Emergency Flex. Citizens undergoing behavioral rehabilitation or temporary financial fraud correction. Drops to basic micro-pod housing and survival rations under automated supervision.
 *   **Tier 1 (The 4):** The Exclusion Zone. Violent offenders and saboteurs of the grid. Complete physical isolation from society in automated therapeutic rehabilitation crypts.
 
-### ARTICLE III: LAW, PRIVACY, AND BIOMETRIC EQUITY
+### ARTICLE III: LAW, PRIVACY, AND JUDICIAL SEPARATION
 1. To guarantee total personal privacy, the tracking features of the citizen chip remain in an encrypted "active-sleep state." The AI cannot access or report location telemetry unless an emergency vocal trigger is activated or acute biological trauma is logged by internal sensors.
-2. The National Judicial AI shall process all criminal trial evidence with pure mathematical logic to eliminate human prejudice and wrongful convictions. Sentence mitigation, mercy clauses, and the evaluation of emotional intent in crimes of passion remain the exclusive domain of human juries.
-3. Every human preserves absolute sovereignty over their own body in life and death. The state is permanently forbidden from seizing, harvesting, or utilizing a deceased citizen's body as public property or mechanical hardware. Citizens facing irreversible physical suffering or extreme centenarian exhaustion retain the right to seek a peaceful, voluntary Compassionate Exit.
+2. **The Separation of Talent and Conduct:** A citizen’s economic L-USD generation is hardcoded to utility output and cannot be reduced, frozen, or canceled by public vote, political bias, or personal pettiness. Original ideas and creative merit are un-cancellable.
+3. **The Behavioral Infraction Protocol:** If a high-tier citizen or elite innovator engages in personal misconduct, harassment, or abuse of authority, their wealth cannot buy immunity. Upon human jury conviction, they face strict behavioral penalties, including automated L-USD fines and temporary tier-degradation to Tier 2 status until psychological rehabilitation is fully logged.
+4. Every human preserves absolute sovereignty over their own body in life and death. The state is permanently forbidden from seizing, harvesting, or utilizing a deceased citizen's body as public property or mechanical hardware. Citizens facing irreversible physical suffering or extreme centenarian exhaustion retain the right to seek a peaceful, voluntary Compassionate Exit.
 
 ### ARTICLE IV: URBAN RECONSTRUCTION, ANIMAL RIGHTS, & BIOSPHERE ENGINE
 1. To maximize space for public parks, wildlife preserves, and natural ecosystems, all major urban areas shall be rebuilt into highly dense, vertical concentric rings. Subterranean magnetic transit networks shall replace private vehicles within these urban zones. Absolute private land hoarding is illegal; any property left vacant or unused for more than 90 days is automatically seized by the state and converted into public baseline housing.
@@ -67,8 +70,3 @@ To effectively drive worldwide progress, optimize human incentives, and prevent 
 *   **[0:00 - 0:10] THE PROBLEM**
     *   *Visual:* Fast, chaotic cuts of modern city streets, flashing red bills, a clock ticking aggressively, and a stressed worker staring at a laptop screen at night.
     *   *Audio:* Low, tense, rhythmic electronic bass drone. 
-    *   *Voiceover:* "For thousands of years, humanity has been trapped in a single, brutal cycle: Work to survive, or starve. We spend our lives trading our health and passions just to afford rent, groceries, and healthcare. But what if the system itself is the glitch?"
-*   **[0:10 - 0:25] THE TRANSITION**
-    *   *Visual:* The chaotic screen shatters. It transitions to a bright, clean, breathtaking aerial view of a futuristic city arranged in perfect, vertical concentric rings, surrounded by deep green forests and rivers. 
-    *   *Audio:* The tense drone stops. A soaring, uplifting, cinematic synth melody swells.
-    *   *Voiceover:* "Welcome to The Seanocivitasopolis Utopia Project—or SOTP. Conceived by architect Sean David John, this is a revolutionary, open-source civil blueprint designed to perfectly save humanity and our planet."
