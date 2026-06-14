@@ -1,4 +1,4 @@
-# THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOTP)
+# THE SOCPLISS PROJECT
 ## The Official Manifesto for the SOCPLISS Protocol (v13.1)
 
 **Architect:** Sean David John  
@@ -8,7 +8,7 @@
 ---
 
 ## 📜 PREAMBLE
-The SOCPLISS Protocol is a sovereign, offline-first digital architecture designed to encode human rights, survival, and merit directly into system logic. By moving governance from corruptible human administration to an immutable algorithmic protocol, we ensure a fair, transparent, and resilient foundation for human flourishing.
+The SOCPLISS Protocol is a sovereign, offline-first digital architecture designed to encode human rights, survival, and merit directly into system logic. By moving governance from corruptible human administration to an immutable algorithmic protocol, we ensure a fair, transparent, and resilient foundation for human flourishing. We use the name **SOCPLISS** because it represents the core of our vision: a **S**overeign, **O**pen, **C**losed-Loop, **P**rotocol for **L**ife, **I**ntegrity, **S**urvival, and **S**ustenance.
 
 ---
 
