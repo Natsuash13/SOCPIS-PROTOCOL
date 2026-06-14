@@ -18,7 +18,7 @@ class HumanGatekeeperProtocol:
             return False
         return True
 
-# 3. LOGISTICAL ENGINE: Step-by-Step resource processing
+# 3. LOGISTICAL ENGINE
 class LogisticalControlBus:
     def process_allocation(self, node):
         print(f"STEP 01 [FETCH]: Monitoring regional resource availability for {node.name}...")
@@ -48,7 +48,7 @@ class TieredEngagementProtocol:
                 return tier
         return 0
 
-# 5. USER NODE: The individual entity
+# 5. USER NODE
 class UserNode:
     def __init__(self, name, impact_score, b_usd):
         self.name = name
@@ -59,11 +59,10 @@ class UserNode:
     def update_status(self, tiered_protocol):
         self.tier = tiered_protocol.calculate_tier(self.impact_score)
 
-# 6. INITIALIZATION: Accessing the system
+# 6. INITIALIZATION
 def initialize_protocol():
     print("--- SOCPLISS Protocol Initializing ---")
     key = input("Enter Architect Key to unlock Moral Lock: ")
-    # Checks against Replit Environment Secret
     if key == ARCHITECT_KEY:
         print("Moral Lock Unlocked. System Stable.")
         return True
@@ -74,16 +73,13 @@ def initialize_protocol():
 # 7. EXECUTION
 if __name__ == "__main__":
     if initialize_protocol():
-        # Instantiate system components
         gatekeeper = HumanGatekeeperProtocol()
         logistics = LogisticalControlBus()
         protocol = TieredEngagementProtocol()
         
-        # Example: Citizen_Alpha initialization
         node = UserNode("Citizen_Alpha", 650, 1000) 
         node.update_status(protocol)
         
-        # System check
         if gatekeeper.verify_transaction(node, "Allocation"):
             logistics.process_allocation(node)
             print(f"Node: {node.name}")
