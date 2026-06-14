@@ -1,75 +1,95 @@
-# ==============================================================================
-# SEANOCIVITASOPOLIS UTOPIA PROTOCOL (SOCPIS) - MASTER ENGINE v15.0
-# Architect: Sean David John (c) 2026
-# Status: Closed-Loop Sovereign Architecture // Multi-Modal Dispatch
-# ==============================================================================
+import os
+import sys
 
-import hashlib
-import time
+# 1. SECURITY: Architect Key is stored as a Replit Secret
+# Ensure you have added 'ARCHITECT_KEY' to your Replit Tools > Secrets.
+ARCHITECT_KEY = os.environ.get('ARCHITECT_KEY', 'default_key')
 
+# 2. CORE SYSTEM: The Moral Lock and Survival Firewall
 class HumanGatekeeperProtocol:
-    """The Moral Lock: The Architect holds the final say on all system updates."""
     def __init__(self):
-        self.moral_lock = False
-        self.patches = {}
+        self.moral_lock_active = True
 
-    def unlock_system(self, key):
-        if key == "SEAN_ARCHITECT_KEY_2026":
-            self.moral_lock = True
-            print("[SYSTEM UNLOCKED] Architect identity confirmed.")
+    def verify_transaction(self, user_node, request_type):
+        """Ensures the B-USD survival floor is never breached."""
+        if not self.moral_lock_active:
+            return True
+        if user_node.b_usd < 0:
+            return False
+        return True
 
-    def propose_patch(self, patch_id, snippet, rationale):
-        if not self.moral_lock: return "REJECTED: Moral Lock Active."
-        self.patches[patch_id] = {"snippet": snippet, "rationale": rationale, "approved": False}
-        print(f"\n[⚠️ PATCH PROPOSAL: {patch_id}]\nRATIONALE: {rationale}\nCODE: {snippet}")
+# 3. LOGISTICAL ENGINE: Step-by-Step resource processing
+class LogisticalControlBus:
+    def process_allocation(self, node):
+        print(f"STEP 01 [FETCH]: Monitoring regional resource availability for {node.name}...")
+        print("STEP 02 [DECODE]: Mapping needs against B-USD baseline...")
+        print("STEP 03 [EXECUTE]: Allocation authorized.")
 
-    def apply_patch(self, patch_id, key):
-        if key == "SEAN_ARCHITECT_KEY_2026" and patch_id in self.patches:
-            self.patches[patch_id]["approved"] = True
-            return f"[✅ PATCH {patch_id} MERGED] System logic updated."
-        return "[❌ ACCESS DENIED] Invalid Architect key."
-
-class MediaDispatchQueue:
-    """Multi-Modal Media Dispatcher: AI proposes; Architect approves."""
-    def __init__(self):
-        self.drafts = []
-
-    def queue_media(self, topic, media_type):
-        content = f"Drafted {media_type} regarding {topic}: [PROTOCOL_DATA]"
-        self.drafts.append({"topic": topic, "type": media_type, "content": content})
-        return f"Draft queued for {media_type}. Awaiting Architect approval."
-
+# 4. FLUID MERITOCRACY: Impact-based Tiering
 class TieredEngagementProtocol:
-    """Tiered Engagement: Contract-First, then On-Demand Explanation."""
     def __init__(self):
-        self.stage = "INITIAL_CONTRACT"
-        self.contract = ("--- SOCPIS MORAL CHARTER ---\n1. Survival is a right.\n2. Non-Commodification enforced.\n3. Architect Sovereignty.")
+        # Thresholds for fluid impact-based tiers (0-14)
+        self.tier_thresholds = {
+            14: 100000, # Collective Consensus
+            13: 50000,  # Joker AI Safety Valve
+            12: 10000,  # Strategic Architect
+            11: 5000,
+            10: 2500,
+            5: 500,     # Impact Spectrum entry
+            4: 200,     # Legacy Calibration
+            3: 100,     # Universal Baseline
+            0: 0        # Sovereign Node
+        }
 
-    def trigger(self, user_input=None):
-        if self.stage == "INITIAL_CONTRACT":
-            print(self.contract)
-            self.stage = "AWAITING_INQUIRY"
-        elif "how" in str(user_input).lower():
-            return "[TECHNICAL SUMMARY]: Protocol utilizes a closed-loop Biometric Node bus."
-        return "System standing by."
+    def calculate_tier(self, impact_score):
+        # Dynamic calculation: Tiers determined by impact score, not job titles
+        for tier in sorted(self.tier_thresholds.keys(), reverse=True):
+            if impact_score >= self.tier_thresholds[tier]:
+                return tier
+        return 0
 
-# --- INITIALIZATION ---
+# 5. USER NODE: The individual entity
+class UserNode:
+    def __init__(self, name, impact_score, b_usd):
+        self.name = name
+        self.impact_score = impact_score
+        self.b_usd = b_usd
+        self.tier = 0
+
+    def update_status(self, tiered_protocol):
+        self.tier = tiered_protocol.calculate_tier(self.impact_score)
+
+# 6. INITIALIZATION: Accessing the system
+def initialize_protocol():
+    print("--- SOCPLISS Protocol Initializing ---")
+    key = input("Enter Architect Key to unlock Moral Lock: ")
+    # Checks against Replit Environment Secret
+    if key == ARCHITECT_KEY:
+        print("Moral Lock Unlocked. System Stable.")
+        return True
+    else:
+        print("Invalid Key. Protocol Halted.")
+        return False
+
+# 7. EXECUTION
 if __name__ == "__main__":
-    gatekeeper = HumanGatekeeperProtocol()
-    dispatcher = MediaDispatchQueue()
-    engagement = TieredEngagementProtocol()
-
-    # 1. Startup: Display Contract First
-    engagement.trigger()
-
-    # 2. Unlock System for the Architect
-    gatekeeper.unlock_system("SEAN_ARCHITECT_KEY_2026")
-
-    # 3. Simulate AI Patch Proposal
-    gatekeeper.propose_patch("PATCH_001", "def optimize(): return True", "Improves latency.")
-    
-    # 4. Simulate Media Generation
-    print(dispatcher.queue_media("Protocol Rights", "Video Script"))
-
-    # 5. Architect Final Approval
-    print(gatekeeper.apply_patch("PATCH_001", "SEAN_ARCHITECT_KEY_2026"))
+    if initialize_protocol():
+        # Instantiate system components
+        gatekeeper = HumanGatekeeperProtocol()
+        logistics = LogisticalControlBus()
+        protocol = TieredEngagementProtocol()
+        
+        # Example: Citizen_Alpha initialization
+        node = UserNode("Citizen_Alpha", 650, 1000) 
+        node.update_status(protocol)
+        
+        # System check
+        if gatekeeper.verify_transaction(node, "Allocation"):
+            logistics.process_allocation(node)
+            print(f"Node: {node.name}")
+            print(f"Current Impact Score: {node.impact_score}")
+            print(f"Current Fluid Tier: {node.tier}")
+        else:
+            print("Transaction Rejected: Survival Floor Violation.")
+    else:
+        sys.exit()
