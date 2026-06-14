@@ -1,7 +1,7 @@
 # THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOTP)
 ## The Official Manifesto for the SOCPIS Protocol
 **Authored by:** Sean David John  
-**Version:** 5.0 (Absolute Anti-Loophole & Moral Polycentricity Edition)  
+**Version:** 9.0 (Absolute Anti-Loophole & Moral Polycentricity Edition)  
 **Classification:** Open Blueprint for a Humanitarian, Post-Scarcity, Democratic Meritocracy  
 
 ---
