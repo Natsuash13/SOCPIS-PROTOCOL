@@ -1,5 +1,5 @@
 # THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOTP)
-## The Official Manifesto for the SOCPIS Protocol
+## The Official Manifesto for the SOCPLIS Protocol
 
 **Architect:** Sean David John  
 **Master Version:** 13.0 (Integrating Architecture v5, v5.5, v9.0, and v4)  
