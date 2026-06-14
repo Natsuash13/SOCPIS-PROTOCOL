@@ -3,31 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOCPIS Protocol Sandbox</title>
+    <title>SOCPIS Sovereign AI Network</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>SOCPIS PROTOCOL</h1>
-        <p class="subtitle">Seanocivitasopolis Utopia Project (SOTP) | Core Rights Sandbox</p>
+        <h1>SOCPIS PROTOCOL NEXUS</h1>
+        <p class="subtitle">Seanocivitasopolis Utopia Project (SOTP) | Sovereign Core Hub</p>
     </header>
 
     <main class="container">
+        <!-- Live Voice Wake-Word Status Monitor Bar -->
+        <div id="voiceWakeStatusBar" class="card" style="padding: 1rem 1.5rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; border-color: #238636; background: rgba(35, 134, 54, 0.05);">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span id="wakeStatusIndicatorLight" style="width: 12px; height: 12px; background-color: #cb2431; border-radius: 50%; box-shadow: 0 0 8px #cb2431; display: inline-block;"></span>
+                <span id="wakeStatusLabelText" style="font-weight: bold; font-size: 0.95rem; color: #ffffff;">SYSTEM STATUS: VOICE CORE SLEEPING (Initialize Below)</span>
+            </div>
+            <button class="btn btn-base" id="micInitButton" onclick="initializeLiveWakeWordEngine()" style="min-width: auto; padding: 0.5rem 1rem; background-color: #238636; font-size: 0.85rem;">🔒 Initialize Voice Activation Core</button>
+        </div>
+
         <!-- Rights vs Privileges Philosophy Box -->
         <section class="card philosophy-section">
             <h2>⚖️ System Mandate: Rights vs. Privileges</h2>
             <p><strong>Universal Human Rights:</strong> Guaranteed, un-expiring baseline access to survival infrastructure managed via AI security algorithms to prevent any backdoors or loops.</p>
             <p><strong>Merit Privileges:</strong> Government and corporate tiers are earned strictly through social utility, public infrastructure innovation, and moral service execution. Capitalist ambition follows <em>after</em> absolute resource security is locked down.</p>
             <div class="moral-callout" style="background: rgba(88, 166, 255, 0.05); padding: 1rem; border-left: 3px solid var(--text-accent); border-radius: 4px; margin-top: 1rem;">
-                <p style="margin: 0; font-size: 0.9rem; color: #ffffff;">💡 <strong>Moral Polycentricity Mode Active:</strong> This model permits distinct societies to maintain their own laws and moral standards. The AI does not legislate; it scans dynamically for structural loopholes to guarantee that human extraction, starvation, or resource denial can never be coded into law.</p>
+                <p style="margin: 0; font-size: 0.9rem; color: #ffffff;">💡 <strong>Biometric Fusion Engine Status: Active.</strong> Simple layout preferences execute instantly for personal browsing. Fundamental architecture re-writes prompt an un-clonable multi-factor verification check analyzing your live voiceprint and an automated real-time face mesh scan.</p>
             </div>
         </section>
 
-        <!-- Sandbox Simulator -->
+        <!-- Biometric Camera Verification Module -->
+        <section class="card camera-section" id="biometricAuthWindow" style="display: none; text-align: center;">
+            <h2 style="color: var(--alert-color);">🔐 Anti-Clone Biometric Verification Challenge</h2>
+            <p>High-Privilege Code Modification Detected. Verifying living human presence to eliminate audio deepfakes and software mimics:</p>
+            <div style="position: relative; width: 320px; height: 240px; margin: 0 auto; background: #000; border-radius: 8px; border: 2px solid var(--alert-color); overflow: hidden;">
+                <video id="webcamFeed" autoplay playsinline style="width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1);"></video>
+                <div class="scanner-line"></div>
+            </div>
+            <p id="bioStatus" style="font-weight: bold; margin-top: 1rem; color: var(--text-accent);">Awaiting Media Hardware Authorization...</p>
+        </section>
+
+        <!-- Conversational Chat Hub -->
+        <section class="card chat-hub-section">
+            <h2>💬 SOCPIS Protocol Interactive Chat Core</h2>
+            <p>Ask our core AI engine structural questions, test local sandbox modifications, request internet web searches, or issue master system re-write commands:</p>
+            
+            <div id="chatHistoryWindow" class="chat-window">
+                <div class="chat-bubble ai-bubble">
+                    <strong>🤖 SOCPIS AI Core:</strong> Greetings, traveler. I am the non-legislative processing layer for the Seanocivitasopolis Utopia Project. I analyze logistics, scrap live web records, and ensure absolute rights safety. Before we explore the architecture, what specific area of our post-scarcity society are you looking to understand, search, or optimize today?
+                </div>
+            </div>
+
+            <div class="chat-input-bar">
+                <input type="text" id="userTextInput" placeholder="Type an inquiry, request an online search, or state a system change command..." onkeypress="handleChatKeyPress(event)">
+                <button class="btn btn-luxury" onclick="processUserChatPrompt()" style="min-width: auto; padding: 0.75rem 1.5rem;">Send 🚀</button>
+            </div>
+            
+            <div class="transaction-buttons" style="margin-top: 1rem;">
+                <button class="btn btn-voice" onclick="triggerVoiceInputSimulation()" style="background-color: #0284c7; width: 100%; border: 1px solid var(--text-accent);">🎤 Click to Manually Activate Voice Prompt Core</button>
+            </div>
+        </section>
+
+        <!-- Sandbox Simulator Dashboard -->
         <section class="card simulator-section">
             <h2>💳 Economy & Matrix Calculator</h2>
             <p>Select a Social Tier to simulate the economic distribution rules under the SOCPIS framework:</p>
-            
             <div class="control-group">
                 <label for="tierSelect">Select Social Matrix Tier:</label>
                 <select id="tierSelect">
@@ -39,7 +79,6 @@
                     <option value="12">Tier 12: World Council Member (Conditional Authority Privilege)</option>
                 </select>
             </div>
-
             <div class="results-display">
                 <div class="stat-box">
                     <h4>B-USD Account (Survival Right)</h4>
@@ -56,33 +95,13 @@
             </div>
         </section>
 
-        <!-- Loophole Scanning Terminal Simulator -->
+        <!-- Dynamic Loophole Terminal -->
         <section class="card terminal-section">
-            <h2>🛒 BST Card Interaction Terminal & Loophole Scanner</h2>
-            <p>Simulate transactions or system updates to observe how the AI processes resource-allocation integrity:</p>
+            <h2>🛒 Loophole Attack Simulator</h2>
+            <p>Test the baseline security layers against external exploits:</p>
             <div class="transaction-buttons">
-                <button class="btn btn-base" onclick="simulateBSTTransaction('baseline', false)">Standard Baseline Purchase (1x Weekly Rations)</button>
-                <button class="btn btn-alert" onclick="simulateBSTTransaction('baseline', true)">Simulate System Overuse Warning (Backdoor Test)</button>
-                <button class="btn btn-luxury" onclick="simulateBSTTransaction('luxury', 150)">Premium Luxury Privilege Purchase (L$150)</button>
-                <button class="btn btn-malicious" id="exploitBtn" onclick="simulateSystemExploit()" style="background-color: #da3637;">Simulate Legislative Backdoor Loophole (Attack Test)</button>
+                <button class="btn btn-malicious" id="exploitBtn" onclick="simulateSystemExploit()" style="background-color: #da3637; width: 100%;">Simulate Legislative Backdoor Loophole (Attack Test)</button>
             </div>
-        </section>
-
-        <!-- Adaptive Allocation Portal (AAP) -->
-        <section class="card aap-section">
-            <h2>🔄 Adaptive Allocation Portal (AAP)</h2>
-            <p>If your physiological needs have increased (e.g. higher physical exercise output) or your local community is facing a resource shortage, use this portal to instantly calibrate your allocation threshold:</p>
-            
-            <div class="control-group">
-                <label for="aapReason">Select Adjustment Reason:</label>
-                <select id="aapReason">
-                    <option value="exercise">Increased Physiological Demand (High Athletic Output / Exercise)</option>
-                    <option value="medical">Medical / Nutritional Metabolic Calibration Request</option>
-                    <option value="shortage">Community Baseline Deficit / Quality Complaint</option>
-                </select>
-            </div>
-
-            <button class="btn btn-luxury" onclick="submitAAPRequest()">Sync BST Card & Recalibrate Threshold</button>
         </section>
     </main>
 
