@@ -1,4 +1,4 @@
-# SOCPIS PROTOCOL – THE DIGITAL CONSTITUTION
+# SOCPLISS PROTOCOL – THE DIGITAL CONSTITUTION
 **Version:** 13.1  
 **Status:** Architect-Led // Succession-Ready  
 **Domain:** Sovereign Digital Infrastructure
@@ -6,7 +6,7 @@
 ---
 
 ## 1. PREAMBLE
-The SOCPIS Protocol is a sovereign, closed-loop digital infrastructure. It is built on the conviction that human survival, dignity, and rights should be encoded into the logic of our systems, rather than left to the ambiguity of human administration. We reject the commodity status of human life and the fragility of centralized, corruptible governance.
+The SOCPLISS Protocol is a sovereign, closed-loop digital infrastructure. It is built on the conviction that human survival, dignity, and rights should be encoded into the logic of our systems, rather than left to the ambiguity of human administration. We reject the commodity status of human life and the fragility of centralized, corruptible governance.
 
 ## 2. THE TRANSITION ROADMAP (v13.1 Update)
 This version marks the beginning of the "Transition Era." The protocol is currently in Phase I, designed to evolve toward total community self-governance.
@@ -23,7 +23,7 @@ This version marks the beginning of the "Transition Era." The protocol is curren
 5. **ALGORITHMIC ACCOUNTABILITY:** All system updates (patches) must be proposed transparently. The code is the law, and the law must be visible, auditable, and subject to community review before enactment.
 
 ## 4. ARCHITECTURAL COMMITMENT
-The SOCPIS system rejects "Big Nudging" and paternalistic digital governance. Our goal is not to steer humanity, but to provide a secure, transparent, and fair environment for human flourishing. 
+The SOCPLISS system rejects "Big Nudging" and paternalistic digital governance. Our goal is not to steer humanity, but to provide a secure, transparent, and fair environment for human flourishing. 
 
 We prioritize:
 * **Resilience:** The system must function regardless of external connectivity, utilizing closed-loop nodes.
@@ -35,4 +35,4 @@ The system is protected by the `HumanGatekeeperProtocol`. While the Architect ho
 
 ---
 *Authorized by the Architect: Sean David John (c) 2026*
-*This document serves as the supreme governance framework for the SOCPIS Protocol.*
+*This document serves as the supreme governance framework for the SOCPLISS Protocol.*
