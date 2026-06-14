@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const busdVal = document.getElementById('busdVal');
     const lusdVal = document.getElementById('lusdVal');
     const permVal = document.getElementById('permVal');
-    const aapReason = document.getElementById('aapReason');
+    const bioWindow = document.getElementById('biometricAuthWindow');
+    const webcamFeed = document.getElementById('webcamFeed');
+    const bioStatus = document.getElementById('bioStatus');
 
-    // Structural Configuration Mapping Rights vs Privileges
     const matrixConfig = {
         '2': { busd: 5000, lusdMult: 0.0, perms: "Tier 2: Privileges Paused | UNCONDITIONAL SURVIVAL RIGHTS LOCKED" },
         '3': { busd: 5000, lusdMult: 1.0, perms: "Full Unconditional Civil Sovereignty (Baseline Floor)" },
@@ -15,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         '12': { busd: 5000, lusdMult: 5.0, perms: "Conditional Planetary Resource Allocation Signatory Privilege" }
     };
 
-    let currentLusdWallet = 500.00;
+    let localStream = null;
+    let wakeWordEngineActive = false;
 
     function updateSimulation() {
         const selectedTier = tierSelect.value;
         const config = matrixConfig[selectedTier];
-
         if (config) {
             busdVal.textContent = `$${config.busd.toLocaleString()} / mo (Universal Right Base)`;
             lusdVal.textContent = `${config.lusdMult.toFixed(1)}x (Merit Privilege Pool)`;
@@ -28,63 +29,147 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Handlers for Universal Rights Protection vs Privilege Verification
-    window.simulateBSTTransaction = function(itemType, isOveruse) {
-        const activeTier = tierSelect.value;
-        const activeConfig = matrixConfig[activeTier];
+    window.handleChatKeyPress = function(event) {
+        if (event.key === 'Enter') {
+            processUserChatPrompt();
+        }
+    };
 
-        // Absolute Right Validation: Standard baseline never depletes or asks for human currency
-        if (itemType === 'baseline' && !isOveruse) {
-            alert(`✅ [BST Tap Validated] Pulse & Thermal Verified.\nProcessing B-USD Baseline Asset.\nCost Covered via Systemic Abundance Pool ($0 Net Out-of-Pocket).\n\nResult: Universal human survival right fully guaranteed.`);
+    // --- IMMORTAL WAKE-WORD LISTENING ENGINE ---
+    window.initializeLiveWakeWordEngine = function() {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            alert("❌ Voice Activation Unusable: Web Speech Recognition API not supported in this browser.");
             return;
         }
 
-        // Restriction of Privilege Check: Tier 2 cannot bypass privilege boundaries, but survival is never touched
-        if (activeTier === '2' && (itemType === 'luxury' || isOveruse)) {
-            alert("❌ BST Transaction Denied:\nTier 2 profiles have luxury privilege deviations suspended during active rehabilitation. Universal human survival rights remain completely operational.");
-            return;
-        }
+        const recognizerInstance = new SpeechRecognition();
+        recognizerInstance.continuous = true;
+        recognizerInstance.interimResults = false;
+        recognizerInstance.lang = 'en-US';
 
-        // Human Rights Firewall Overuse Handling: AI Sinks the loop, transforms the error to an allocation flex
-        if (itemType === 'baseline' && isOveruse) {
-            alert(`⚠️ [AI LOOPHOLE SCANNER ACTIVE]\n\nConsumption ceiling alert detected! To preserve planetary equilibrium, the AI has audited this data stream.\n\nFirewall Execution: To guarantee no backdoors deny basic human rights, this spike is classified as an Infrastructure Logistics Deficit.\n\nTransaction: APPROVED automatically at $0 out-of-pocket cost. Your baseline human right cannot be restricted or forced into a luxury expense.`);
-            return;
-        }
+        const statusLight = document.getElementById('wakeStatusIndicatorLight');
+        const statusText = document.getElementById('wakeStatusLabelText');
+        const initButton = document.getElementById('micInitButton');
 
-        // Privilege Consumption Flow
-        if (itemType === 'luxury') {
-            const adjustedCost = 150 / (activeConfig ? activeConfig.lusdMult : 1);
-            if (currentLusdWallet >= adjustedCost) {
-                currentLusdWallet -= adjustedCost;
-                alert(`💳 [BST Tap Validated] Privilege Verified.\nL-USD Account Debited: L$${adjustedCost.toFixed(2)} (Scaled by official merit tier value).\nRemaining Luxury Balance: L$${currentLusdWallet.toFixed(2)}`);
-            } else {
-                alert(`❌ BST Transaction Denied:\nInsufficient L-USD merit privileges available in your profile. Baseline survival resources remain completely unaffected.`);
+        recognizerInstance.onstart = () => {
+            wakeWordEngineActive = true;
+            statusLight.style.backgroundColor = "#238636";
+            statusLight.style.boxShadow = "0 0 10px #238636";
+            statusText.textContent = "SYSTEM STATUS: ALWAYS-LISTENING ACTIVE. Say: 'Hey SOCPIS...'";
+            initButton.style.display = "none";
+        };
+
+        recognizerInstance.onresult = (event) => {
+            const currentResultIndex = event.resultIndex;
+            const liveTranscriptText = event.results[currentResultIndex].transcript.trim().toLowerCase();
+            console.log(`🎤 Audio Fragment Logged: "${liveTranscriptText}"`);
+
+            if (liveTranscriptText.includes('socpis') || liveTranscriptText.includes('sock piss') || liveTranscriptText.includes('sotp')) {
+                statusLight.style.backgroundColor = "#58a6ff";
+                statusLight.style.boxShadow = "0 0 12px #58a6ff";
+                statusText.textContent = "🚨 AWAKE STATE TRIGGERED: Extracting Intention Prompt...";
+
+                let cleanCoreCommand = liveTranscriptText.replace(/hey socpis|socpis|sock piss|sotp/gi, "").trim();
+                
+                setTimeout(() => {
+                    if (cleanCoreCommand.length > 2) {
+                        document.getElementById('userTextInput').value = cleanCoreCommand;
+                        processUserChatPrompt();
+                    } else {
+                        triggerVoiceInputSimulation();
+                    }
+                    statusLight.style.backgroundColor = "#238636";
+                    statusLight.style.boxShadow = "0 0 10px #238636";
+                    statusText.textContent = "SYSTEM STATUS: ALWAYS-LISTENING ACTIVE. Say: 'Hey SOCPIS...'";
+                }, 800);
             }
+        };
+
+        recognizerInstance.onerror = () => { wakeWordEngineActive = false; };
+        recognizerInstance.onend = () => { wakeWordEngineActive = false; recognizerInstance.start(); };
+        recognizerInstance.start();
+    };
+
+    window.triggerVoiceInputSimulation = function() {
+        const voicePrompt = prompt("🎤 [SOCPIS Voice Processing Panel]\nState your prompt or macro update selection:");
+        if (voicePrompt) {
+            document.getElementById('userTextInput').value = voicePrompt;
+            processUserChatPrompt();
         }
     };
 
-    // Simulated Attempted Corporate/Legislative Exploitation Vector
-    window.simulateSystemExploit = function() {
-        alert("🚨 [ATTACK SIMULATION RUNNING]\nAn elite group of officials is testing a backdoor legal clause to ration regional healthcare or withhold baseline nutritional calories under a capitalistic austerity model...");
+    // Main Chat Router (Local Sandbox Preferences vs. External Searches vs. Permanent Self-Rewrites)
+    window.processUserChatPrompt = function() {
+        const inputEl = document.getElementById('userTextInput');
+        const chatWindow = document.getElementById('chatHistoryWindow');
+        const promptText = inputEl.value.trim();
+
+        if (!promptText) return;
+
+        const userBubble = document.createElement('div');
+        userBubble.className = "chat-bubble user-bubble";
+        userBubble.innerHTML = `<strong>👤 User/Admin:</strong> ${promptText}`;
+        chatWindow.appendChild(userBubble);
         
-        setTimeout(() => {
-            alert("🛡️ [AI AUTOMATED SECURITY CORE TRIGGERED]\nLoophole fully detected and neutralized! System logic recognizes a violation of the Human Inviolability Mandate.\n\nAction: The hostile legislation is permanently blocked from execution. The offending officials' Tier 11/12 authority privileges have been instantly stripped down to Tier 2 Rehabilitation. Equitable resource management remains fully locked.");
-        }, 1500);
-    };
+        inputEl.value = ""; 
+        chatWindow.scrollTop = chatWindow.scrollHeight; 
 
-    // Adaptive Allocation Portal Handler
-    window.submitAAPRequest = function() {
-        const activeTier = tierSelect.value;
-        const reason = aapReason.value;
+        const query = promptText.toLowerCase();
 
-        if (activeTier === '2') {
-            alert("❌ AAP Access Denied:\nRehabilitation tier profiles must have structural physiological threshold calibrations validated by a Tier 11 Human supervisor.");
+        // ROUTE A: High Privilege Master System Rewrite (Launches Webcam Anti-Deepfake Validation)
+        if (query.includes('change code') || query.includes('modify system') || query.includes('update blueprint') || query.includes('rewrite')) {
+            setTimeout(() => {
+                const alertBubble = document.createElement('div');
+                alertBubble.className = "chat-bubble ai-bubble";
+                alertBubble.style.borderColor = "var(--alert-color)";
+                alertBubble.innerHTML = `<strong>🤖 SOCPIS AI Core:</strong> High-privilege write directive identified. Booting face mesh anti-clone challenge matrix to verify physical larynx and skin warmth dynamics...`;
+                chatWindow.appendChild(alertBubble);
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+
+                executeBiometricVerificationChallenge(promptText);
+            }, 800);
             return;
         }
 
-        alert(`🔄 [AAP Biometric Sync Active]\nScanning BST Card skin-galvanic responses...\nTelemetry verified for request type: [${reason.toUpperCase()}]\nSystemic allocation thresholds successfully recalculated and updated.`);
-    };
+        // ROUTE B: Online Database Search Pipeline & General Inquiry
+        setTimeout(() => {
+            const aiBubble = document.createElement('div');
+            aiBubble.className = "chat-bubble ai-bubble";
 
-    tierSelect.addEventListener('change', updateSimulation);
-    updateSimulation();
-});
+            // If user explicitly asks to fetch web facts or do a search lookup
+            if (query.includes('search') || query.includes('online') || query.includes('google') || query.includes('look up')) {
+                aiBubble.innerHTML = `<strong>🤖 SOCPIS AI Core:</strong> Query dispatched to backend web-crawler node. Connecting securely to active global data streams...`;
+                chatWindow.appendChild(aiBubble);
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+
+                // Contact server search endpoint
+                fetch('/api/public-web-query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userPromptText: promptText })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    const dynamicBubble = document.createElement('div');
+                    dynamicBubble.className = "chat-bubble ai-bubble";
+                    dynamicBubble.innerHTML = `<strong>🤖 SOCPIS AI Core (Live Internet Insights):</strong> ${data.responseText}`;
+                    chatWindow.appendChild(dynamicBubble);
+                    chatWindow.scrollTop = chatWindow.scrollHeight;
+                })
+                .catch(() => {
+                    alert("❌ Search Node Error: Ensure 'Run' is selected in Replit to power up your server framework.");
+                });
+                return;
+            }
+
+            // ROUTE C: Personal Local Customizations & Media Asset Injection
+            if (query.includes('background') || query.includes('theme') || query.includes('color')) {
+                document.body.style.backgroundColor = "#020617";
+                aiBubble.innerHTML = `<strong>🤖 SOCPIS AI Core:</strong> Local theme set to Dark Slate Blue. This preference change is localized to your specific device sandbox and has not updated the server files.`;
+            } else if (query.includes('picture') || query.includes('image')) {
+                aiBubble.innerHTML = `<strong>🤖 SOCPIS AI Core:</strong> Generating structural rendering for the BST hardware unit card:<br><br><img src="https://unsplash.com" style="max-width:100%; border-radius:6px; border:1px solid var(--border-color);">`;
+            } else if (query.includes('video')) {
+                aiBubble.innerHTML = `<strong>🤖 SOCPIS AI Core:</strong> Mounting project proposal presentation footage:<br><br><video controls style="width:100%; border-radius:6px; background:#000;"><source src="my-proposal-video.mp4" type="video/mp4"></video>`;
+            } else {
+                aiBubble.innerHTML = `<strong>🤖 SOCPIS AI Core:</strong> I have processed your inquiry regarding "${promptText}". To map this onto our New York regional infrastructure servers correctly, should we evaluate this rule parameter for Tier 3 universal baseline survival rights, or Tier 11 executive privileges?`;
