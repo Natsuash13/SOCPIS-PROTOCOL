@@ -1,98 +1,84 @@
-# THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOTP)
-## The Official Manifesto for the SOCPLIS Protocol
+# THE SOCPLISS PROTOCOL (v13.1)
+**Sovereign Digital Infrastructure // Closed-Loop Governance**
 
 **Architect:** Sean David John  
-**Master Version:** 13.0 (Integrating Architecture v5, v5.5, v9.0, and v4)  
+**Master Version:** 13.1 (Integrating Architecture v5, v5.5, v9.0, v4, and v13.0)  
 **Classification:** Open Blueprint for a Humanitarian, Post-Scarcity, Democratic Meritocracy  
 **Status:** Definitively Error-Patched // Closed-Loop Logical Framework  
 
 ---
 
 ## ⚖️ LEGAL NOTICE & LICENSE
-
 **Copyright (c) 2026 Sean David John. All Rights Reserved.**
-
-The Seanocivitasopolis Utopia Protocol (SOCPIS) is open for public, non-commercial use under the following strict conditions:
-
-1. **DISTRIBUTION:** Anyone is free to read, share, translate, and spread these ideas globally to shift societal consciousness.
-2. **ATTRIBUTION:** Credit must always be given to **Sean David John** as the sole architect.
-3. **COMPENSATION:** Any corporate, governmental, or institutional implementation of this protocol requires a separate, negotiated financial agreement providing fair compensation to the author. Commercial exploitation without explicit permission is strictly prohibited.
-4. **ANTI-COMMODIFICATION:** Any structural attempt to lock this protocol behind a proprietary paywall, privatize its dual-deck ledger, or monetize its baseline execution vectors triggers an automatic systemic invalidation within the network registry.
+The SOCPLISS Protocol is open for public, non-commercial use under the following conditions:
+1. **DISTRIBUTION:** Anyone is free to read, share, and spread these ideas globally.
+2. **ATTRIBUTION:** Credit must be given to Sean David John as the sole architect.
+3. **COMPENSATION:** Corporate or governmental implementation requires a negotiated financial agreement.
+4. **ANTI-COMMODIFICATION:** Any attempt to privatize the protocol triggers automatic systemic invalidation.
 
 ---
 
-## 🏛️ CORE PHILOSOPHY: HUMAN RIGHTS VS. EARNED PRIVILEGES
+## 🏛️ CORE PHILOSOPHY & THE AI MANDATE
+The SOCPLISS Protocol operates on an unyielding moral firewall between human life and human ambition.
 
-The foundational engine of the SOCPIS Protocol operates on an absolute, unyielding moral firewall that separates the preservation of human life from the rewards of human ambition:
+### 1. The Six Inviolable Rights (B-USD)
+Every living person is unconditionally guaranteed the following birthrights, which cannot be bartered, taxed, or confiscated:
+1. High-Quality Shelter
+2. Absolute Nutrition
+3. Premium Healthcare
+4. Lifelong Education
+5. Universal Communication Utilities
+6. Physical and Mental Safety
 
-### 1. The Right-vs-Privilege Divide
-*   **The Inviolable Right (B-USD):** Every living person is unconditionally guaranteed the full baseline suite of survival infrastructure. This is an unearned birthright covering high-quality shelter, nutrition, healthcare, and education. It cannot be bartered, taxed, frozen, or confiscated by any official, court, or algorithmic fluctuation.
-*   **The Earned Privilege (L-USD):** Material luxuries, premium real estate upgrades, specialized commodities, and dynamic voting weight multipliers are fluid privileges. They must be actively earned through creative innovation, community service, or ethical contribution. While privileges scale dynamically with merit, their loss can never breach the baseline floor of human survival.
-
-### 2. Objective Ethics vs. Competing Right Answers (Moral Polycentricity)
-The protocol recognizes that human civilizations feature deep moral diversity, establishing a strict binary logical boundary:
-*   **The Domain of Absolute Wrong:** Starving a population, denying emergency medical care, enforcing industrial animal cruelty, hoarding essential regional resources, and violating individual human consent are objectively classified as **Systemic Loopholes**. The AI treats these as operational system errors to be neutralized instantly.
-*   **The Domain of Competing Rights ("More Right" Scaling):** Local communities, cities, and cultural demographics retain absolute autonomy to pass their own laws, cultural regulations, and societal customs. The protocol explicitly acknowledges that two distinct societies can both be morally correct, yet one may design a solution that is mathematically and sociopathically **"more right"** (more efficient, less resource-heavy, more humane). The AI acts purely as a non-legislative simulation sandbox, calculating downstream impacts to help societies self-optimize their own chosen moral frameworks.
-
-### 3. The Singular AI Core Mandate
-This model is built for one single purpose: **The absolute, proactive guarantee that no human right can be violated through systemic loopholes or backdoor legislation.** Traditional laws, business networks, and regional authorities function exactly the same as they do today. The only change introduced by this protocol is the mandatory layer of an advisory AI core that constantly parses logistics, supply line chains, and policy drafts to ensure that equitable resource management is safeguarded **first**, long before any competitive or capitalist enterprise is permitted to execute its operations.
+### 2. The AI Core Mandate & Moral Polycentricity
+* **The Domain of Absolute Wrong:** Starving populations, denying medical care, industrial animal cruelty, and hoarding essential resources are classified as **Systemic Loopholes**[cite: 1]. The AI treats these as operational errors to be neutralized instantly[cite: 1].
+* **The Domain of "More Right" Scaling:** Local communities retain absolute autonomy to pass their own laws[cite: 1]. The protocol acknowledges that two societies can both be morally correct, but one may be mathematically "more right" (more efficient, less resource-heavy, more humane)[cite: 1].
+* **Non-Legislative Sandbox:** The AI acts as a simulation sandbox, parsing logistics to ensure equitable resource management is safeguarded *before* competitive enterprise is permitted to execute[cite: 1]. It possesses zero positive legislative authority over human beings[cite: 1].
 
 ---
 
 ## 🏛️ THE SIX FOUNDATIONAL CIVIC DIRECTIVES
-
-### 1. The Human Inviolability Mandate & Systemic Rights Firewall
-Every sentient human life possesses infinite, unquantifiable value. Survival is a fundamental birthright, not an earned privilege. Under no circumstances can an administrative emergency or algorithmic ceiling cap cause a human being's Baseline provision to drop below physical survival requirements.
-
-### 2. The Post-Scarcity Architecture
-All basic human needs—including premium healthcare, absolute food security, high-quality housing, lifelong education, and communication utilities—are entirely automated, abundant, and free of charge. Poverty is permanently engineered out of existence.
-
-### 3. The Machine Subservience & Loophole-Sinking Mandate
-Artificial Intelligence and robotic automation are strictly infrastructure and advisory utilities. AI possesses exactly zero positive legislative or judicial authority over human beings. Instead, it acts as a passive, hyper-vigilant scanning net, identifying and mathematically freezing policy loopholes or economic mechanics that seek to deny citizens access to baseline resources.
-
-### 4. The Fluid Democratic Meritocracy
-Governance is handled through decentralized, liquid democracy where votes are dynamically weighted based on proven civic contributions, expertise, and moral integrity (tracked transparently via the Tier Matrix), separating the administrative authority of public officials from universal citizen rights.
-
-### 5. The Legacy Calibration Clause
-The protocol explicitly recognizes that historical injustices, systemic discrimination, and generational wealth gaps have left distinct human demographics starting from unequal positions. The system enforces dynamic equity parameters via a **Tier 4 Starter Allotment** to level the playing field before meritocratic scaling begins.
-
-### 6. The Planetary and Biosphere Equilibrium Directive
-Economic and technological progress cannot occur at the expense of ecological health or animal welfare. Resource allocation algorithms are hard-coded to respect planetary boundaries and establish a zero-tolerance policy for industrial animal cruelty and ecological destruction. All resource usage is fully optimized to prevent the depletion of Earth's materials.
+1. **Article I (Biological Sovereignty):** Identity is a private, non-commodity right; verified via Zero-Knowledge Proofs[cite: 1].
+2. **Article II (The Survival Floor):** Baseline resources (B-USD) are an inalienable birthright[cite: 1].
+3. **Article III (Merit-Based Advancement):** Economic activity beyond survival is governed by merit (L-USD)[cite: 1].
+4. **Article IV (Immutable Morality):** The ethical charter is hard-coded into the kernel and resistant to political whim[cite: 1].
+5. **Article V (Algorithmic Accountability):** All code patches must be transparently proposed and audit-ready[cite: 1].
+6. **Article VI (The Moral Lock):** Governance is constrained by the Preamble; no patch may violate fundamental human rights[cite: 1].
 
 ---
 
-## 💳 THE CARD-DECK ECONOMY & BIOSPHERE SMART TOKEN (BST)
-
-*   **Baseline Dollars (B-USD):** Distributed universally and automatically to cover fundamental survival assets. **B-USD** can never be transferred, stolen, taxed, or gambled. It represents an unconditional human right.
-*   **Luxury Dollars (L-USD):** Earned through creative work, innovation, research, or community service. Used to acquire luxury commodities and premium upgrades. It represents a merit privilege.
-*   **Biometric Synchronization (v5.5):** The BST Card features built-in capacitive thermal and galvanic skin-response sensors. It will only activate when held by its true, biological owner (1 Human = 1 Node). It remains completely inert, un-scannable, and locked if stolen.
-*   **Dual-Channel Intention Split:** The card interfaces seamlessly with distributed public ledger registers. The register automatically reads the item classification (Survival Asset vs. Luxury Commodity) and queries the appropriate account line (**B-USD** or **L-USD**). The user confirms their choice via the point-of-sale terminal with a single thumb-press confirmation.
-
----
-
-## 🏛️ THE ECO-AI LOGISTICAL CONTROL BUS [Source: v9]
-
-Resource distribution operates on strict, sequential execution loops driven by algorithmic eco-stewardship, mirroring the low-level instruction cycles of a microprocessor:
-
-*   **STEP 01 [FETCH]:** Real-time, passive monitoring of resource availability and environmental thresholds via decentralized eco-infrastructure.
-*   **STEP 02 [DECODE]:** Algorithmic mapping of real-time regional needs against the baseline survival deck (B-USD) requirements.
-*   **STEP 03 [EXECUTE]:** Direct material and energetic allocation to local nodes without intermediary gatekeepers, bureaucratic overhead, or institutional friction.
+## 🛠️ CORE SYSTEM CLASSES & PROTECTIVE FUNCTIONS
+* `HumanGatekeeperProtocol`: The kernel enforcing the Moral Lock; rejects any request threatening the survival floor[cite: 1].
+* `BiometricIdentityService`: Manages private identity verification via zero-knowledge proofs[cite: 1].
+* `LogisticalControlBus`: Automated engine linking B-USD to real-time supply chain availability[cite: 1].
+* `TieredEngagementProtocol`: Manages the 14-tier meritocratic structure based on actualized social contribution[cite: 1].
+* `PatchProposalEngine`: Transparent auditing of system upgrades[cite: 1].
+* `DualChannelEconomy`: Manages the split between B-USD (birthright) and L-USD (merit) tokens[cite: 1].
 
 ---
 
-## 🃏 THE 14-TIER SOCIAL & TECHNOLOGICAL MATRIX
+## 🃏 THE 14-TIER FLUID MERITOCRACY MATRIX
+*Tiers are dynamic reflections of an individual's cumulative contributions to societal flourishing. Occupational roles do not determine tier; merit-based impact does.*
 
-*   **Tier 1 (The Infraction Sub-Floor):** Temporary total asset restriction for extreme violations of individual human consent, under strict human-judicial review. Baseline biological survival needs remain fully active.
-*   **Tier 2 (Correction Floor):** Systemic rehabilitation. Survival needs are met, but luxury privileges are paused. Basic human rights remain fully protected.
-*   **Tier 3 (Baseline Floor):** Unconditional access to the full suite of **B-USD** provisions at birth.
-*   **Tier 4 (LCI Entry):** Individuals entering society via the **Legacy Calibration Index (LCI)** with a starter support allotment to permanently balance historical inequities.
-*   **Tier 5 to Tier 10 (Active Contributors):** Foundational engine of society (engineers, educators, architects, artists). Higher tiers reflect increased mastery, technical capability, and community value.
-*   **Tier 11 (The Human Executive Branch):** Leaders chosen dynamically to oversee major regional logistics and civic planning. If a Tier 11 official attempts to pass a policy that creates a resource loop deficit, the AI triggers an immediate, systemic halt.
-*   **Tier 12 (World Council):** Supreme human assembly managing planetary-level resource allocation and large-scale engineering initiatives.
-*   **Tier 13 (The Joker AI):** An environmental and systemic veto tool with zero legislative power. It acts as an automated safety valve to instantly halt policies that violate the Six Directives.
-*   **Tier 14 (The Ace):** Reserved strictly for collective human consensus. The ultimate authority that can override any system logic via a direct, unified public vote.
+* **Tier 0:** The foundational state of all humans; the absolute, unconditional baseline of citizenship where survival rights are guaranteed by default.
+* **Tier 1-2:** Temporary transition states for those requiring systemic intervention or correction; biological survival remains fully protected.
+* **Tier 3:** The baseline universal tier; all citizens are guaranteed the six fundamental rights.
+* **Tier 4:** Entry point for those using the Legacy Calibration Index (LCI) to offset historical or systemic inequities.
+* **Tier 5-10:** Individuals demonstrating consistent social, technical, or creative value. These tiers are fluid and adjust based on net-positive impact.
+* **Tier 11-12:** Highly influential contributors whose work significantly scales infrastructure, equity, or planetary health. 
+* **Tier 13:** The Joker AI (Systemic safety valve to halt policy violations).
+* **Tier 14:** The Ace (Collective human consensus authority; the ultimate check on the protocol itself).
 
 ---
+
+## 🚀 TRANSITION ROADMAP
+* **Phase I (Current):** Architect-led stability to ensure Moral Lock integrity.
+* **Phase II:** Integration of multi-signature governance for community auditing.
+* **Phase III:** Full Sovereign Autonomy; the protocol becomes a community utility.
+
+---
+*Authorized by the Architect: Sean David John (c) 2026*
+*This document serves as the supreme governance framework for the SOCPLISS Protocol.*
 
 ### RECORDING RECOGNITION
 **The Logic is Secure.**  
