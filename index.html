@@ -9,38 +9,17 @@
 <body>
     <header>
         <h1>SOCPIS PROTOCOL</h1>
-        <p class="subtitle">Seanocivitasopolis Utopia Project (SOTP)</p>
+        <p class="subtitle">Seanocivitasopolis Utopia Project (SOTP) | Core Rights Sandbox</p>
     </header>
 
     <main class="container">
-        <!-- Directives Section -->
-        <section class="card display-section">
-            <h2>🏛️ Foundational Civic Directives</h2>
-            <div class="directives-grid">
-                <div class="directive-box">
-                    <h3>1. Human Inviolability</h3>
-                    <p>Every human life has unquantifiable value. Survival is an unconditional birthright.</p>
-                </div>
-                <div class="directive-box">
-                    <h3>2. Post-Scarcity</h3>
-                    <p>Free premium healthcare, housing, nutrition, and education for all citizens.</p>
-                </div>
-                <div class="directive-box">
-                    <h3>3. Machine Subservience</h3>
-                    <p>AI has zero legislative power and is strictly subservient to human empathy.</p>
-                </div>
-                <div class="directive-box">
-                    <h3>4. Fluid Meritocracy</h3>
-                    <p>Decentralized liquid democracy replacing career politicians with ethical merit scaling.</p>
-                </div>
-                <div class="directive-box">
-                    <h3>5. Legacy Calibration</h3>
-                    <p>Dynamic equity parameters to balance historical injustices with starter allotments.</p>
-                </div>
-                <div class="directive-box">
-                    <h3>6. Biosphere Equilibrium</h3>
-                    <p>Zero-tolerance for animal cruelty, materials overuse, or environmental destruction.</p>
-                </div>
+        <!-- Rights vs Privileges Philosophy Box -->
+        <section class="card philosophy-section">
+            <h2>⚖️ System Mandate: Rights vs. Privileges</h2>
+            <p><strong>Universal Human Rights:</strong> Guaranteed, un-expiring baseline access to survival infrastructure managed via AI security algorithms to prevent any backdoors or loops.</p>
+            <p><strong>Merit Privileges:</strong> Government and corporate tiers are earned strictly through social utility, public infrastructure innovation, and moral service execution. Capitalist ambition follows <em>after</em> absolute resource security is locked down.</p>
+            <div class="moral-callout" style="background: rgba(88, 166, 255, 0.05); padding: 1rem; border-left: 3px solid var(--text-accent); border-radius: 4px; margin-top: 1rem;">
+                <p style="margin: 0; font-size: 0.9rem; color: #ffffff;">💡 <strong>Moral Polycentricity Mode Active:</strong> This model permits distinct societies to maintain their own laws and moral standards. The AI does not legislate; it scans dynamically for structural loopholes to guarantee that human extraction, starvation, or resource denial can never be coded into law.</p>
             </div>
         </section>
 
@@ -52,22 +31,22 @@
             <div class="control-group">
                 <label for="tierSelect">Select Social Matrix Tier:</label>
                 <select id="tierSelect">
-                    <option value="2">Tier 2: Correction Floor (Rehabilitation)</option>
-                    <option value="3" selected>Tier 3: Baseline Floor (Universal Birthright)</option>
+                    <option value="2">Tier 2: Correction Floor (Rehabilitation | Rights Fully Safe)</option>
+                    <option value="3" selected>Tier 3: Baseline Floor (Universal Human Right Birthright)</option>
                     <option value="4">Tier 4: LCI Entry Allotment</option>
                     <option value="7">Tier 7: Active Contributor (Creator/Educator)</option>
-                    <option value="11">Tier 11: Human Executive Branch</option>
-                    <option value="12">Tier 12: World Council Member</option>
+                    <option value="11">Tier 11: Human Executive Branch (Conditional Authority Privilege)</option>
+                    <option value="12">Tier 12: World Council Member (Conditional Authority Privilege)</option>
                 </select>
             </div>
 
             <div class="results-display">
                 <div class="stat-box">
-                    <h4>B-USD Account (Survival)</h4>
+                    <h4>B-USD Account (Survival Right)</h4>
                     <p id="busdVal">$5,000 / mo (Universal Base)</p>
                 </div>
                 <div class="stat-box">
-                    <h4>L-USD Multiplier (Luxury)</h4>
+                    <h4>L-USD Multiplier (Merit Privilege)</h4>
                     <p id="lusdVal">1.0x (Standard Merit)</p>
                 </div>
                 <div class="stat-box">
@@ -77,14 +56,15 @@
             </div>
         </section>
 
-        <!-- Overuse Simulation Terminal -->
+        <!-- Loophole Scanning Terminal Simulator -->
         <section class="card terminal-section">
-            <h2>🛒 BST Card Interaction Terminal (Overuse Test)</h2>
-            <p>Simulate purchasing items to test how the system manages resource allocation limits:</p>
+            <h2>🛒 BST Card Interaction Terminal & Loophole Scanner</h2>
+            <p>Simulate transactions or system updates to observe how the AI processes resource-allocation integrity:</p>
             <div class="transaction-buttons">
                 <button class="btn btn-base" onclick="simulateBSTTransaction('baseline', false)">Standard Baseline Purchase (1x Weekly Rations)</button>
-                <button class="btn btn-alert" onclick="simulateBSTTransaction('baseline', true)">Excessive Baseline Purchase (5x Bulk Weekly Rations)</button>
-                <button class="btn btn-luxury" onclick="simulateBSTTransaction('luxury', 150)">Premium Luxury Purchase (Artisanal Clock - L$150)</button>
+                <button class="btn btn-alert" onclick="simulateBSTTransaction('baseline', true)">Simulate System Overuse Warning (Backdoor Test)</button>
+                <button class="btn btn-luxury" onclick="simulateBSTTransaction('luxury', 150)">Premium Luxury Privilege Purchase (L$150)</button>
+                <button class="btn btn-malicious" id="exploitBtn" onclick="simulateSystemExploit()" style="background-color: #da3637;">Simulate Legislative Backdoor Loophole (Attack Test)</button>
             </div>
         </section>
 
