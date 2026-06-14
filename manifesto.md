@@ -1,38 +1,71 @@
-# SOCPLISS PROTOCOL – THE DIGITAL CONSTITUTION
-**Version:** 13.1  
-**Status:** Architect-Led // Succession-Ready  
-**Domain:** Sovereign Digital Infrastructure
+# THE SEANOCIVITASOPOLIS UTOPIA PROJECT (SOTP)
+## The Official Manifesto for the SOCPLISS Protocol (v13.1)
+
+**Architect:** Sean David John  
+**Master Version:** 13.1  
+**Status:** Definitively Error-Patched // Closed-Loop Logical Framework  
 
 ---
 
-## 1. PREAMBLE
-The SOCPLISS Protocol is a sovereign, closed-loop digital infrastructure. It is built on the conviction that human survival, dignity, and rights should be encoded into the logic of our systems, rather than left to the ambiguity of human administration. We reject the commodity status of human life and the fragility of centralized, corruptible governance.
+## 📜 PREAMBLE
+The SOCPLISS Protocol is a sovereign, offline-first digital architecture designed to encode human rights, survival, and merit directly into system logic. By moving governance from corruptible human administration to an immutable algorithmic protocol, we ensure a fair, transparent, and resilient foundation for human flourishing.
 
-## 2. THE TRANSITION ROADMAP (v13.1 Update)
-This version marks the beginning of the "Transition Era." The protocol is currently in Phase I, designed to evolve toward total community self-governance.
+---
 
-* **Phase I: The Architect Era (Current):** Stability and foundational integrity. Logic is secured under the Architect Key. The focus is on ensuring the "Moral Lock" functions flawlessly.
-* **Phase II: The Constitutional Transition:** Integration of multi-signature governance. Changes to the protocol will require verifiable community consensus, moving authority from the individual to the collective.
-* **Phase III: Sovereign Autonomy:** The protocol becomes an autonomous, community-held utility. The Architect role is rendered obsolete, and the system is governed entirely by its own internal logic and the consensus of its nodes.
+## 🏛️ CORE PHILOSOPHY & THE AI MANDATE
+The SOCPLISS Protocol operates on a fundamental moral firewall separating human life from human ambition. 
 
-## 3. CORE PRINCIPLES
-1. **BIOLOGICAL SOVEREIGNTY:** Identity is a private, verifiable, and non-commodity right. No central authority owns the citizen's data. Zero-knowledge proofs ensure that identity is verified without exposing private data.
-2. **THE SURVIVAL FLOOR (B-USD):** Baseline resources are a birthright, not a traded commodity. The protocol guarantees shelter, nutrition, and essential health access as an unalienable moral constant.
-3. **MERIT-BASED ADVANCEMENT (L-USD):** Beyond the survival floor, economic activity is governed by merit-based signals. Value created by the individual remains under the control of the individual.
-4. **IMMUTABLE MORALITY:** The core ethical charter is hard-coded into the system kernel. It cannot be altered by political whim, market fluctuations, or external interference.
-5. **ALGORITHMIC ACCOUNTABILITY:** All system updates (patches) must be proposed transparently. The code is the law, and the law must be visible, auditable, and subject to community review before enactment.
+### 1. The Six Inviolable Rights (B-USD)
+Every living person is unconditionally guaranteed these six birthrights. They are not earned; they are the essential infrastructure of a dignified human life that cannot be bartered, taxed, or confiscated:
+1. High-Quality Shelter
+2. Absolute Nutrition
+3. Premium Healthcare
+4. Lifelong Education
+5. Universal Communication Utilities
+6. Physical and Mental Safety
 
-## 4. ARCHITECTURAL COMMITMENT
-The SOCPLISS system rejects "Big Nudging" and paternalistic digital governance. Our goal is not to steer humanity, but to provide a secure, transparent, and fair environment for human flourishing. 
+### 2. The Fluid Meritocracy: Tiers as "Impact Feedback"
+We reject rigid social stratification. The 15-tier matrix (0–14) is not a hierarchy of human value; it is a **resolution of feedback**. It measures the **Net Positive Contribution (NPC)** an individual makes to their community.
+* **Dynamic Fluidity:** Occupational roles do not determine your tier. A leader, an artist, or a technician rises in the matrix solely based on the scale and impact of their actualized contribution to societal flourishing.
+* **Non-Static Engagement:** Status is tied to *ongoing* engagement. Impact is measured by the ripple effect one creates, ensuring the matrix remains a living reflection of community health.
 
-We prioritize:
-* **Resilience:** The system must function regardless of external connectivity, utilizing closed-loop nodes.
-* **Integrity:** The logic must be audit-ready, corruption-resistant, and mathematically verifiable.
-* **Participation:** We empower nodes to verify the rules they live by, ensuring that governance is a transparent act of participation, not a hidden act of administration.
+---
 
-## 5. THE MORAL LOCK
-The system is protected by the `HumanGatekeeperProtocol`. While the Architect holds the keys during the current transition phase, the system is designed to reject any patch that violates the Preamble or Core Principles. The power of the Architect is constrained by the very logic that empowers the system.
+## 🃏 THE 15-TIER FLUID MERITOCRACY MATRIX
+*Tiers represent a dynamic spectrum of social impact. They are not castes, but measures of contribution.*
+
+* **Tier 0 (The Sovereign Node):** The foundational state of all humans; the absolute, unconditional baseline of citizenship where survival rights are guaranteed by default.
+* **Tier 1–2 (Systemic Resilience):** Temporary states for those requiring structured paths back to the baseline; survival is protected.
+* **Tier 3 (The Universal Baseline):** Standard active citizenship; the baseline for all empowered members of society.
+* **Tier 4 (Legacy Calibration):** Entry point for those using the Legacy Calibration Index (LCI) to offset historical or systemic inequities.
+* **Tier 5–10 (The Impact Spectrum):** Active, fluid tiers for contributors. Individuals move through these based on their measurable, net-positive impact on community health, infrastructure, and innovation.
+* **Tier 11–12 (Strategic Architects):** Contributors whose work scales planetary infrastructure, equity, or health. Their tier reflects the *radius* of their impact, not the title of their job.
+* **Tier 13 (The Joker AI):** The systemic safety valve; an autonomous logic layer that instantly halts policy violations.
+* **Tier 14 (The Ace):** The ultimate authority of collective human consensus; the final check on the protocol to ensure it never overrides human sovereignty.
+
+---
+
+## ⚖️ THE AI CORE & MORAL POLYCENTRICITY
+* **The Domain of Absolute Wrong:** Starving populations, denying medical care, industrial animal cruelty, and hoarding are **Systemic Loopholes**. The AI neutralizes these as operational errors.
+* **The Domain of "More Right" Scaling:** Communities retain absolute autonomy to pass local customs. The AI functions as a non-legislative simulation sandbox, calculating which frameworks are mathematically "more right"—more efficient, less resource-heavy, and more humane.
+* **Legislative Prohibition:** The AI possesses zero positive legislative authority. It is an advisory net that ensures human rights are safeguarded *before* competitive enterprise executes.
+
+---
+
+## 🚀 THE TRANSITION ROADMAP
+* **Phase I (Current):** Architect-led stability to ensure Moral Lock integrity.
+* **Phase II:** Integration of multi-signature governance for community auditing.
+* **Phase III:** Full Sovereign Autonomy; the protocol becomes a community utility.
+
+---
+
+## ⚖️ LEGAL NOTICE & LICENSE
+**Copyright (c) 2026 Sean David John. All Rights Reserved.**
+The SOCPLISS Protocol is open for public, non-commercial use under the following conditions:
+1. **DISTRIBUTION:** Anyone is free to read, share, and spread these ideas globally.
+2. **ATTRIBUTION:** Credit must be given to Sean David John as the sole architect.
+3. **COMPENSATION:** Corporate or governmental implementation requires a negotiated financial agreement.
+4. **ANTI-COMMODIFICATION:** Any attempt to privatize the protocol triggers automatic systemic invalidation.
 
 ---
 *Authorized by the Architect: Sean David John (c) 2026*
-*This document serves as the supreme governance framework for the SOCPLISS Protocol.*
