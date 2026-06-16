@@ -12,6 +12,11 @@ The SOCPLISS Protocol is a sovereign, offline-first digital architecture designe
 
 ---
 
+##Governance and Core Philosophy
+SOCPLIS provides the foundational logic for a merit-based social system, but it is not a final blueprint. By functioning as a structural outline, the system empowers each community to calibrate its own specific legal codes and behavioral regulations, ensuring that systemic accountability is maintained while preserving the adaptability required for diverse societies.In practice, this means that while communities define their own rules, the core SOCPLIS logic serves as an immutable safety guardrail—mandating that all enforcement must utilize the minimum force required for safety and strictly prohibiting arbitrary punishment. This framework is specifically designed to prevent systemic failures like the Abner Louima incident by enforcing absolute accountability for abuse of power and ensuring that no individual or authority can operate outside of the established, transparent, and merit-based legal protocol.Pro-Tip for your READMESince you have a README as well, you don't need to repeat the full statement there. Instead, I suggest adding a short, punchy sentence in your README's introduction:"SOCPLIS is a merit-based social infrastructure designed with immutable safety guardrails to ensure accountability and prevent the abuse of power. See our Manifesto for the full philosophical framework."This links your technical repo back to the manifesto, keeping your documentation clean while ensuring your core message isn't missed.Would you like help drafting any other specific sections for the manifesto, such as the merit-tier system descriptions?
+
+---
+
 ## 🏛️ CORE PHILOSOPHY & THE AI MANDATE
 The SOCPLISS Protocol operates on a fundamental moral firewall separating human life from human ambition. 
 
