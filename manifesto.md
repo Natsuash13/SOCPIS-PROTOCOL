@@ -29,6 +29,13 @@ Every living person is unconditionally guaranteed these six birthrights. They ar
 5. Universal Communication Utilities
 6. Physical and Mental Safety
 
+ ---
+
+## Stewardship, Competency, and Universal Protection
+
+Within the SOCPLIS framework, the relationship between individuals, their guardians, and their governing nodes is rooted in the principle of stewardship rather than ownership. All individuals—from newborns to elders—are inherently entitled to the SOCPLIS Universal Baseline, a non-negotiable mandate ensuring safety, nutrition, and fundamental human rights, regardless of their societal node. For minors, those with cognitive or mental health impairments, or elders whose capacity to manage their affairs has waned, the system provides guardianship to facilitate their well-being until 'Competency Certification' is either reached or maintained. This certification is the objective threshold for full autonomy; it is not an arbitrary age, but a demonstrated ability to comprehend the societal contract, manage one's own safety, and resist external coercion. Once this threshold is met, any individual has the full sovereignty to select their own societal node, including the right to opt into environments that may prioritize different values over the Baseline—provided that such a choice is made with full cognitive capacity and voluntary consent. However, for those who do not meet this standard of competency, or who are vulnerable to coercion, the SOCPLIS Universal Baseline remains an immutable protection. This ensures that while individuals are free to live by their own rules when they are capable, the dignity and security of every human being are fundamentally guaranteed by the society against neglect, exploitation, or the loss of agency.
+
+ ---
 ### 2. The Fluid Meritocracy: Tiers as "Impact Feedback"
 We reject rigid social stratification. The 15-tier matrix (0–14) is not a hierarchy of human value; it is a **resolution of feedback**. It measures the **Net Positive Contribution (NPC)** an individual makes to their community.
 * **Dynamic Fluidity:** Occupational roles do not determine your tier. A leader, an artist, or a technician rises in the matrix solely based on the scale and impact of their actualized contribution to societal flourishing.
