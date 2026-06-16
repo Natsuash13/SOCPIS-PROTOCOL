@@ -8,6 +8,13 @@
 
 ---
 
+
+---
+### Core Purpose Statementt
+SOCPLIS is a merit-based social infrastructure designed with immutable safety guardrails to ensure accountability and prevent the abuse of power. See our Manifesto for the full philosophical framework.
+
+---
+
 ## ⚖️ LEGAL NOTICE & LICENSE
 **Copyright (c) 2026 Sean David John. All Rights Reserved.**
 The SOCPLISS Protocol is open for public, non-commercial use under the following conditions:
