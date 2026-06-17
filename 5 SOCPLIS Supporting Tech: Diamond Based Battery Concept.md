@@ -4,6 +4,7 @@
 ---
 
 Where idea came from: Diamond-based-battery(https://youtube.com/shorts/aHRvt3kEUw0?si=3yYtdXA8FDfdz0dR)
+
 To learn more about Socplis: SOCPLIS-MANIFESTO
 
 The integration of long-lasting energy solutions, such as the diamond battery and explained in the video, aligns with the core philosophy of SOCPLIS by focusing on sustainability, infrastructure longevity, and the transformative potential of technological advancement.
