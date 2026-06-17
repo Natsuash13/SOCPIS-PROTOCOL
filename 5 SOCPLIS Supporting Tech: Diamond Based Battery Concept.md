@@ -30,6 +30,9 @@ The integration of diamond-based battery technology would fundamentally shift th
 ---
 
 ### The idea fundamentals behind the diamond (created by Sean John through Socplis ideaology) 
+
+---
+
 ## 1. Internal System Architecture
 The battery replaces a standard chemical block with a multi-layered, solid-state nuclear hybrid engine divided into three distinct operational layers:
 
@@ -42,6 +45,8 @@ A flawless, non-radioactive diamond casing ($\text{}^{12}\text{C}$) that complet
 #### The Solid-State Energy Bank (The Reservoir)
 A high-density ceramic supercapacitor or thin-film solid-state lithium layer that surrounds the core. Unlike volatile liquid lithium batteries, this layer handles massive, rapid energy transfers without degrading, gassing, or expanding.
 
+---
+
 ### 2. The Dual-Input Power Dynamics (How It Works)
 The system eliminates the traditional "recharge lag" by utilizing two independent power streams to keep the phone alive:
 
@@ -53,7 +58,7 @@ When the user demands heavy, sustained energy (like shooting 4K video, running h
 
 The PMIC includes strict one-way gating to ensure that high external voltages do not backflow into the delicate diamond semiconductor lattice, preventing structural fractures.
 
-
+---
 
 ## 3. Structural and Functional Effects on the Cell Phone
 
