@@ -25,7 +25,7 @@ Every living person is unconditionally guaranteed these six birthrights. They ar
 1. High-Quality Shelter
 2. Absolute Nutrition
 3. Premium Healthcare
-4. Lifelong Education
+4. Opportunity to Lifelong Education
 5. Universal Communication Utilities
 6. Physical and Mental Safety
 
